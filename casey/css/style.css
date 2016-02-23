@@ -65,9 +65,16 @@ h5 {
 	line-height: 54px;
 	text-align: center;	
 }
+h6{
+	padding-top: 15px;
+	padding-bottom: 5px;
+	font-size: 24px;
+}
+
+
 
 p {
-	margin-bottom: 19px;
+	
 }
 
 img {
@@ -216,10 +223,10 @@ header h1 a img {
 	content: '';
 	z-index: 1;
 	width: 0px;
-height: 0px;
-border-style: solid;
-border-width: 37px 50px 0 50px;
-border-color: #5b4a42 transparent transparent transparent;
+	height: 0px;
+	border-style: solid;
+	border-width: 37px 50px 0 50px;
+	border-color: #5b4a42 transparent transparent transparent;
 	left: 50%;
 	margin-left: -50px;
 	top: 0;
@@ -254,6 +261,45 @@ header.page5 .men4 .hover{
 }
 header.page6 .men5 .hover{
 	top: 0;
+}
+
+form {
+	padding-top: 100px;	
+    font-size: 18px;
+}
+.txtwide{
+	width: 500px;
+}
+.txtarea{
+	rows=5;
+	width: 500px;
+}
+input[type=text]{
+    padding: 0;
+    height: 20px;
+    position: relative;
+    left: 0;
+    outline: none;
+    border: 1px solid #fff;
+    background-color: #6dbeeb;
+    font-size: 16px;
+	margin-bottom: 10px;
+	color: #fff;
+	font-weight: 550;
+}
+textarea{
+    padding: 0;
+    height: 50px;	
+	width: 500px;
+    position: relative;
+    left: 0;
+    outline: none;
+    border: 1px solid #fff;
+    background-color: #6dbeeb;
+    font-size: 16px;
+	margin-bottom: 10px;
+	color: #fff;
+	font-weight: 550;
 }
 #page1 {
 	padding-top: 200px;
@@ -316,6 +362,7 @@ header.page6 .men5 .hover{
 	background-color: #5b4a42;
 	color:#ecedef;
 }
+
 #page5:after {
 	border-color: #6dbeeb transparent transparent transparent;
 }
@@ -334,7 +381,17 @@ header.page6 .men5 .hover{
 #page6 .slogan {
 	margin-bottom: 100px;
 }
-
+.button {
+	background-color: #6dbeeb; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+	border-style: solid;
+	border-color: #fff;
+}
 .content {
 }
 
@@ -376,7 +433,7 @@ header.page6 .men5 .hover{
 .box img {
 	border: 3px solid #fff;
 	border-radius: 15px;
-	margin-bottom: 19px;
+	margin-bottom: 19px;	
 }
 
 .box .text1 {
@@ -386,6 +443,7 @@ header.page6 .men5 .hover{
 .slogan {
 	margin-bottom: 117px;
 }
+
 
 
 /****Map***/
@@ -405,11 +463,11 @@ header.page6 .men5 .hover{
 	top: 7px;
 	border: 1px solid #3c7f9f;
 	width: 100%;
-		 -moz-box-sizing: border-box;
- -webkit-box-sizing: border-box;
- -o-box-sizing: border-box;
- box-sizing: border-box;
- display: block;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	display: block;
 
 }
 
