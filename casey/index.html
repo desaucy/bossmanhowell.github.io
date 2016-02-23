@@ -68,6 +68,15 @@ $(document).ready(function () {
         easingType: 'easeOutQuart'
     });
 });
+function showNewForm(){
+	document.getElementById('NewForm').style.display="block";
+	document.getElementById('ReturnForm').style.display="none";	
+}
+
+function showReturnForm(){
+	document.getElementById('ReturnForm').style.display="block";
+	document.getElementById('NewForm').style.display="none";	
+}
 </script>
 <!--[if lt IE 9]>
 <script src="js/html5shiv.js"></script>
@@ -220,19 +229,28 @@ $(document).ready(function () {
     </div>
     <div class="clear"></div>
     <div class="map">
-      <div class="grid_6">
-        <h5>New Clients!</h5>
+      <div class="grid_6" align="center">
         
-      </div>
-	  <div class="grid_6">
-        <h5>Returning Clients!</h5>
-        
+		<input class="button" type="button" id="ctrlbtn1" name="ctrlbtn1" value="New Clients!" onclick="showNewForm();"/> &nbsp
+	  </div>
+	  <div class="grid_6" align="center">
+        <input class="button" type="button" id="ctrlbtn2" name="ctrlbtn2" value="Returning Clients!" onclick="showReturnForm();"/> <br>
+	  </div>	  
+	  <div class="grid_12">
+		<div id="NewForm" name="NewForm"> <!--style="display:none"-->		
+			<iframe src="https://docs.google.com/forms/d/1r-L--weTqqcvcxLmtLBIROVpjaGPutGjTY1lsAf1yto/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+		</div>
+		<div id="ReturnForm" name="ReturnForm" style="display:none">		  
+			<form id="frm2" name="frm2">
+				<h5>Returning Client Form!</h5>
+				<br>
+				Form 2 text 1 <input type="text" id="frm2txt1" name="frm2txt1"/> <br>
+				Form 2 text 2 <input type="text" id="frm2txt2" name="frm2txt2"/> <br>
+			  <input type="submit" id="frm2btn1" name="frm2btn1" value="submit"/> <br>
+			</form>
+		</div>
       </div>
 	  
-      <div class="grid_3">
-        <div class="text1">&nbsp;</div>
-        
-      </div>
       <div class="clear"></div>
     </div>
   </div>
